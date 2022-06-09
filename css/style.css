@@ -1,0 +1,98 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(../images/bg-pattern-top.svg),
+                    url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 45vw bottom 40vh, left 45vw top 44vh;
+}
+
+.container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 340px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card-superior {
+    height: 150px;
+    background-image: url(../images/bg-pattern-card.svg);
+}
+
+.card-img {
+    border: 4px solid var(--white);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto;
+}
+.card-img img {width: 100%;}
+
+.card-inferior {background-color: var(--white);}
+
+.card-inferior .personal-info {
+    padding: 70px 0 30px 0;
+    border-bottom: 1px solid hsla(227, 10%, 46%, .2);
+}
+.card-inferior .personal-info h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+}
+.card-inferior .personal-info h1 span{
+    font-weight: 400;
+    color:  var(--grayish-blue);
+    margin-left: 10px;
+}
+.card-inferior .personal-info p {
+    margin-top: 10px;
+    color:  var(--grayish-blue);
+    font-size: 14px;
+}
+
+.card-inferior .social-networks-info {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-inferior .social-networks-info div span{
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin-bottom: 6px;
+}
+
+.card-inferior .social-networks-info div span+p{
+    font-size: 12px;
+    color: var(--grayish-blue);
+    letter-spacing: 1px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 95%) }
